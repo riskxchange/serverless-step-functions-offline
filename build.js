@@ -71,7 +71,7 @@ module.exports = {
         return this._states(currentState, currentStateName);
     },
 
-    _run(f, event) {
+    async _run(f, event) {
         if (!f) {
             return;
         }// end of states
