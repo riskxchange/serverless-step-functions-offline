@@ -15,7 +15,6 @@
   "scripts": {
     "test-old": "nyc ./node_modules/mocha/bin/mocha ./tests/index.test.js './tests/!(index).test.js'",
     "test": "nyc ./node_modules/mocha/bin/mocha ./tests/index.test.js",
-    "lint": "eslint \"**/*.{js,jsx}\" --quiet"
   },
   "dependencies": {
     "bluebird": "^3.5.1",
@@ -41,9 +40,6 @@
       "*.js"
     ]
   },
-  "pre-commit": [
-    "lint"
-  ],
   "keywords": [
     "aws",
     "lambda",
